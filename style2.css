@@ -61,14 +61,9 @@ input{
     position: relative;
 
 }
-.endForm{
-    /* display: flex;
-    justify-content: space-between; */
-}
 .middle p{
     margin-top: 30px;
     color:  #98A1B2;
-    /* text-align: start; */
     display: inline-block;
     margin-right: 50px;
 }
