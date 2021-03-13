@@ -1,0 +1,108 @@
+body{
+    background-color: #000000;
+    font-family: Roboto;
+}
+.block{
+    margin: auto;
+    width: 300px;
+    height: 340px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5%;
+    margin-top: 200px;
+}
+.topSide{
+    height: 67px;
+    background-color:#F0F2F5;
+    position: relative;
+    border-bottom: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+
+}
+
+.container{
+    padding: 0;
+    padding-left: 0px;
+}
+.topParagraf{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+.middle{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 240px;
+    height: 215px;
+}
+.middle div{
+    text-align: center;
+}
+input{
+    height: 44px;
+    width: 240px;
+    margin-top: 10px;
+}
+.writeEmail{
+    position: relative;
+
+}
+.middle p{
+    margin-top: 30px;
+    color:  #98A1B2;
+    display: inline-block;
+    margin-right: 50px;
+}
+.middle span a{
+    color: black;
+    text-decoration: underline;
+}
+.btn {
+    border-radius: 50px;
+}
+::placeholder {
+    text-indent:1em;
+  }
+
+#password{
+    outline: 1px solid red;
+}
+.form-control{
+    margin: 0;
+    outline: 1px solid #98A1B2;
+    border-radius: 0;
+}
+.input-group-text{
+    background-color: rgb(255, 255, 255);
+    color:#98A1B2 ;
+    /* border-color:grey; */
+    border: 0px solid #98A1B2;
+}
+#passwordDiv{
+    outline: .5px solid red;
+    
+}
+.input-group{
+    border: 1px solid #98A1B2;
+}
+.endForm{
+    margin-top: -10px;
+}
+#basic-addon3{
+    color: red;
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    outline: 1px solid red;
+    background-image: none;
+    border-color:white ;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    border:0px solid white;
+    padding-right: calc(1.5em + .75rem);
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right calc(.375em + .1875rem) center;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+#basic-url3{
+    outline: 1px solid red;
+}
