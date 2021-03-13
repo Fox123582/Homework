@@ -74,7 +74,9 @@ input{
 .btn {
     border-radius: 50px;
 }
-
+::placeholder {
+    text-indent:1em;
+  }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
