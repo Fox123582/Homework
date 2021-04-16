@@ -6,7 +6,7 @@ body{
 .container{
     height: 400px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     background-color: white;
 }
 .firstName{
