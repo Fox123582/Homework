@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    font-size: 2em;
+    font-family: Roboto;
+}
+.container{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+    background-color: white;
+}
+.firstName{
+    margin: auto auto;
+
+}
+.lastName{
+    margin: auto auto;
+
+}
+.email{
+    margin: auto auto;
+
+}
+.button{
+    margin: auto auto;
+}
+input{
+    background-color: #C4C4C4;
+    border-radius: 10%;;
+    width: 270px;
+    border-radius: 9px;
+    line-height: 25px;
+}
+button{
+    background-color: #D81F1F;
+    color: white;
+    width: 270px;
+    border-radius: 9px;
+    margin-top: 47px;
+    line-height: 25px;
+}
