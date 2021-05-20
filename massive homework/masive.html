@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let vasya = { name: "Вася", age: 25, averageMark: 70 };
+    let petya = { name: "Петя", age: 30, averageMark: 100 };
+    let masha = { name: "Маша", age: 28, averageMark: 50 };
+
+
+    let oleg ={ name:'oleg',age : 43, averageMark:39};
+
+    let users = [ vasya, petya, masha ];
+
+//1
+    var userName = users.map(function(item){
+        return item.name;
+    });
+    console.log(userName);
+
+ //1
+
+
+ //2(1)
+    users.push(maks={name:'maks',age: 17,averageMark:29});
+    console.log(users);
+//2(1)
+
+//3
+    var userAge = users.map(function(item){
+        if(item.age >18){
+           return item.name
+        } else{
+            return
+        }
+    });
+    console.log(userAge);
+
+//3
+//4
+    var userMarks = users.map(function(item){
+        if(item.averageMark > 50){
+           return item 
+        } else{
+            return
+        }
+    });
+    console.log(userMarks);
+
+
+
+//4
+//5
+    users.shift();
+    users.unshift(oleg);
+    console.log(users);
+//5
+//6
+    var person =users.forEach(element => {
+        if (users.name === "Петя") {
+            return users.petya
+            
+        } else {
+            return
+        }
+        
+    });
+    console.log(petya);
+
+
+//6
+
+    </script>
+</body>
+</html>
