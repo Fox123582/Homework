@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <form name="tasks" action="get">
+        <label for="task">Задача</label>
+        <input id="task"  type="text">
+        <button id="btn">Сохранить</button>
+    </form>
+    <ul id="goals">
+
+    </ul>
+
+
+
+    <script>
+        const $form = document.forms.tasks;
+        const $goals = document.getElementById('goals');
+        const saved = localStorage.getItem('in');
+        $goals.innerHTML = saved;
+        $form.addEventListener('submit',function(e){
+            e.preventDefault();
+            const task = $form.task.value;
+            const $li = document.createElement('li');
+            $li.textContent = task;
+            $goals.append($li)
+            const inner = $goals.innerHTML;
+            localStorage.setItem('in',inner);
+        })
+
+
+
+
+
+
+    </script>
+</body>
+</html>
