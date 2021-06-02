@@ -41,7 +41,6 @@
 		<a href="#" id="next">Next</a>
 	</div>
     <script>
-        let characters = [];
         const $prev = document.getElementById('prev');
 		const $next = document.getElementById('next');
         const $card_container = document.querySelector('.list');
@@ -88,7 +87,7 @@
 				})
 		}
         getCharacters('http://swapi.dev/api/people/');
-        const getOtherCharacters = (e) => {
+        const getOtherCharacters =function (e)  {
 			e.preventDefault();
 
 			$card_container.innerHTML = '';
